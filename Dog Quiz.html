@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Quiz</title>
+    <link rel="stylesheet" href="Dog Quiz.css">
+</head>
+<body>
+    <header class="pageheader">
+        <h1>Dog Quiz</h1>
+    </header>
+    <div id="container">
+        <main>
+            <form action="/dogquiz">
+                <div class="personalinfo">
+                    <h2 class="subheader">Personal Information</h2>
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="first name">First Name: </label>
+                        </div>
+                        <div class="forminput">
+                            <input type="text" name="First name" id="first name" class="inputinfo" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="last name">Last Name: </label>
+                        </div>
+                        <div class="forminput">
+                            <input type="text" name="Last name" id="last name" class="inputinfo" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="age">Age: </label>
+                        </div>
+                        <div class="forminput">
+                            <input type="number" name="Age" id="age" value="age" min="1" max="110" class="inputinfo" autocomplete="off" required>
+                        </div>
+                    </div>    
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="email">E-mail: </label>
+                        </div>
+                        <div class="forminput">
+                            <input type="email" name="Email" id="email" class="inputinfo" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="regio">Region: </label>
+                        </div>
+                        <div class="forminput">
+                            <select name="Region" id="regio" class="inputinfo" required>
+                                <option value="Afrika">Afrika</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North-America">North-America</option>
+                                <option value="South-America">South-America</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formlabel">
+                            <label for="country">Country: </label>
+                        </div>
+                        <div class="forminput">
+                            <input type="text" name="Country" id="country" class="inputinfo" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Quiz">
+                    <h2 class="subheader">The Quiz: Which breed is shown in the pictures?</h2>
+
+                    <div class="question">
+                        <img class="image" src="images/dog1.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 1: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog1answer" id="dog1ans1" value="labrador" required>
+                                <label for="dog1ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog1answer" id="dog1ans2" value="Akita">
+                                <label for="dog1ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog1answer" id="dog1ans3" value="Samoyed">
+                                <label for="dog1ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog2.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 2: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog2answer" id="dog2ans1" value="Rottweiler" required >
+                                <label for="dog2ans1">Rottweiler</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog2answer" id="dog2ans2" value="Doberman">
+                                <label for="dog2ans2">Doberman</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog2answer" id="dog2ans3" value="Berner Sennen">
+                                <label for="dog2ans3">Berner Sennen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog3.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 3: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog3answer" id="dog3ans1" value="Husky" required>
+                                <label for="dog3ans1">Husky</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog3answer" id="dog3ans2" value="Akita">
+                                <label for="dog3ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog3answer" id="dog3ans3" value="Samoyed">
+                                <label for="dog3ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog4.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 4: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog4answer" id="dog4ans1" value="labrador" required>
+                                <label for="dog4ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog4answer" id="dog4ans2" value="Akita">
+                                <label for="dog4ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog4answer" id="dog4ans3" value="Berner Sennen">
+                                <label for="dog4ans3">Berner Sennen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog5.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 5: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog5answer" id="dog5ans1" value="labrador" required>
+                                <label for="dog5ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog5answer" id="dog5ans2" value="Akita">
+                                <label for="dog5ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog5answer" id="dog5ans3" value="Chihuahua">
+                                <label for="dog5ans3">Chihuahua</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog6.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 6: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog6answer" id="dog6ans1" value="labrador" required>
+                                <label for="dog6ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog6answer" id="dog6ans2" value="Akita">
+                                <label for="dog6ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog6answer" id="dog6ans3" value="Samoyed">
+                                <label for="dog6ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog7.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 7: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog7answer" id="dog7ans1" value="labrador" required>
+                                <label for="dog7ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog7answer" id="dog7ans2" value="Golden Retriever">
+                                <label for="dog7ans2">Golden Retriever</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog7answer" id="dog7ans3" value="Samoyed">
+                                <label for="dog7ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog8.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 8: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog8answer" id="dog8ans1" value="Doberman" required>
+                                <label for="dog8ans1">Doberman</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog8answer" id="dog8ans2" value="Akita">
+                                <label for="dog8ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog8answer" id="dog8ans3" value="Samoyed">
+                                <label for="dog8ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog9.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 9: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog9answer" id="dog9ans1" value="labrador" required>
+                                <label for="dog9ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog9answer" id="dog9ans2" value="Boxer">
+                                <label for="dog9ans2">Boxer</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog9answer" id="dog9ans3" value="Samoyed">
+                                <label for="dog9ans3">Samoyed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <img class="image" src="images/dog10.jpg" alt="">
+                        <div class="answers">
+                            <h3 class="questionheader">Question 10: </h3>
+                            <div class="answer1">
+                                <input type="radio" name="dog10answer" id="dog10ans1" value="labrador" required>
+                                <label for="dog10ans1">Labrador</label>
+                            </div>
+                            <div class="answer2">
+                                <input type="radio" name="dog10answer" id="dog10ans2" value="Akita">
+                                <label for="dog10ans2">Akita</label>
+                            </div>
+                            <div class="answer3">
+                                <input type="radio" name="dog10answer" id="dog10ans3" value="Boxer">
+                                <label for="dog10ans3">Boxer</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="submitbutton">Submit</button>
+                </div>
+            </form>   
+        </main>
+
+    </div>
+    
+</body>
+</html>
